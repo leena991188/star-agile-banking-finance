@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
-      - REPOSITORY_URI=<your-account-id>.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/<your-ecr-repo>
+      - REPOSITORY_URI=<515532682497>.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/<test-repo>
       - IMAGE_TAG=latest
   build:
     commands:
